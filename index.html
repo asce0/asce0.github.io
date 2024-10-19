@@ -6,25 +6,39 @@
     <title>Sayed Shaaban Khalifa - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
             padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #E0E0E0; /* Light text color */
         }
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 30px auto;
+            background: #1E1E1E; /* Darker container background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
         }
-        h1, h2 {
-            color: #333;
+        header {
+            text-align: center;
+            margin-bottom: 30px;
         }
         h1 {
             font-size: 2.5em;
+            color: #4A90E2; /* Accent color */
+        }
+        h2 {
+            color: #FF9800; /* Bright accent color */
+            border-bottom: 2px solid #FF9800;
+            padding-bottom: 5px;
         }
         p {
             line-height: 1.6;
         }
         .contact-info {
-            margin-top: 20px;
+            margin: 20px 0;
+            font-size: 0.9em;
         }
         .contact-info p {
             margin: 5px 0;
@@ -34,10 +48,12 @@
         }
         .experience-item {
             margin-bottom: 20px;
+            border-bottom: 1px solid #333; /* Subtle border */
+            padding-bottom: 10px;
         }
         .experience-item h3 {
-            font-size: 1.2em;
-            color: #555;
+            font-size: 1.3em;
+            color: #FF9800; /* Accent color */
         }
         .skills {
             margin-top: 20px;
@@ -49,19 +65,43 @@
         .skills li {
             display: inline-block;
             margin-right: 15px;
+            background: #4A90E2; /* Skill button color */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .skills li:hover {
+            background: #357ABD; /* Darker on hover */
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid #4A90E2; /* Border around image */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #999;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Sayed Shaaban Khalifa</h1>
-        <p>Dynamic and results-driven software engineer with nearly 5 years of diverse experience in both corporate and startup environments.</p>
+        <header>
+            <img src="sayed.jpg" alt="Sayed Shaaban Khalifa">
+            <h1>Sayed Shaaban Khalifa</h1>
+            <p>Dynamic and results-driven software engineer with nearly 5 years of diverse experience in both corporate and startup environments.</p>
+        </header>
         
         <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:sayed.shaaban.khalifa@gmail.com">sayed.shaaban.khalifa@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:sayed.shaaban.khalifa@gmail.com" style="color: #4A90E2;">sayed.shaaban.khalifa@gmail.com</a></p>
             <p><strong>Location:</strong> Cairo, Egypt</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sayed-shaaban-4b6304119">Sayed Shaaban</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/asce0">asce0</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sayed-shaaban-4b6304119" style="color: #4A90E2;">Sayed Shaaban</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/asce0" style="color: #4A90E2;">asce0</a></p>
         </div>
         
         <section class="experience">
@@ -97,6 +137,10 @@
                 <li>Azure DevOps</li>
             </ul>
         </section>
+        
+        <footer>
+            &copy; 2024 Sayed Shaaban Khalifa. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>
